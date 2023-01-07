@@ -1,0 +1,72 @@
+.CommonButton {
+    outline: none;
+    border: none;
+    background: black;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 0;
+    transition: 0.2s background-color;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    &--light {
+        background: white;
+        border: 1px solid black;
+        color: black;
+    }
+
+    &--light.CommonButton--disabled {
+        border-color: grey;
+        background: white;
+        color: grey;
+    }
+
+    &--dark.CommonButton--disabled {
+        background: rgba(0, 0, 0, 0.7);
+        color: #aaa;
+    }
+
+    &--disabled {
+        pointer-events: none;
+    }
+
+    &--light:not(.CommonButton--disabled):hover {
+        color: white;
+        background: black;
+    }
+}
+
+// .CommonButton:hover {
+
+// }
+
+// .CommonButton--light {
+// }
+
+// .CommonButton--light:not(.CommonButton--disabled):hover {
+//     color: white;
+//     background: black;
+// }
+
+// .CommonButton--light.CommonButton--disabled {
+//     border-color: grey;
+//     background: white;
+//     color: grey;
+// }
+
+/* .CommonButton--dark.CommonButton--light.CommonButton--disabled {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+} */
+
+// .CommonButton--dark.CommonButton--disabled {
+//     background: rgba(0, 0, 0, 0.7);
+//     color: #aaa;
+// }
+
+// .CommonButton--disabled {
+//     pointer-events: none;
+// }

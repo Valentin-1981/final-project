@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 .App-container {
-  display: flex;
-  padding: 20px 40px;
-  gap: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    padding: 20px 40px;
+    gap: 20px;
+    flex-wrap: wrap;
 }

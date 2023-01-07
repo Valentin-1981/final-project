@@ -5,10 +5,42 @@
     padding: 8px 20px;
     color: white;
     border-radius: 0;
-    transition: .2s background-color;
+    transition: 0.2s background-color;
     cursor: pointer;
 }
 
 .CommonButton:hover {
     background: rgba(0, 0, 0, 0.7);
+}
+
+.CommonButton--light {
+    background: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.CommonButton--light:not(.CommonButton--disabled):hover {
+    color: white;
+    background: black;
+}
+
+.CommonButton--light.CommonButton--disabled {
+    border-color: grey;
+    background: white;
+    color: grey;
+}
+
+/* .CommonButton--dark.CommonButton--light.CommonButton--disabled {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+} */
+
+.CommonButton--dark.CommonButton--disabled {
+    background: rgba(0, 0, 0, 0.7);
+    /* color: white; */
+    color: #aaa;
+}
+
+.CommonButton--disabled {
+    pointer-events: none;
 }
